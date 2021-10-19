@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  Plank
 //
-//  Created by National Team on 18.10.2021.
-//
 
 import UIKit
 

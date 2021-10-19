@@ -13,6 +13,8 @@
 		728F3DE3271DA9AF000CD206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728F3DE1271DA9AF000CD206 /* Main.storyboard */; };
 		728F3DE5271DA9B0000CD206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728F3DE4271DA9B0000CD206 /* Assets.xcassets */; };
 		728F3DE8271DA9B0000CD206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728F3DE6271DA9B0000CD206 /* LaunchScreen.storyboard */; };
+		728F3DF1271F01D3000CD206 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728F3DF0271F01D3000CD206 /* Training.swift */; };
+		728F3DF4271F04FA000CD206 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728F3DF3271F04FA000CD206 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		728F3DE4271DA9B0000CD206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728F3DE7271DA9B0000CD206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728F3DE9271DA9B0000CD206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728F3DF0271F01D3000CD206 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		728F3DF3271F04FA000CD206 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		728F3DDA271DA9AF000CD206 /* Plank */ = {
 			isa = PBXGroup;
 			children = (
+				728F3DF2271F0275000CD206 /* Screens */,
+				728F3DEF271F01C3000CD206 /* Models */,
 				728F3DDB271DA9AF000CD206 /* AppDelegate.swift */,
 				728F3DDD271DA9AF000CD206 /* SceneDelegate.swift */,
-				728F3DDF271DA9AF000CD206 /* ViewController.swift */,
 				728F3DE1271DA9AF000CD206 /* Main.storyboard */,
 				728F3DE4271DA9B0000CD206 /* Assets.xcassets */,
 				728F3DE6271DA9B0000CD206 /* LaunchScreen.storyboard */,
 				728F3DE9271DA9B0000CD206 /* Info.plist */,
 			);
 			path = Plank;
+			sourceTree = "<group>";
+		};
+		728F3DEF271F01C3000CD206 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				728F3DF0271F01D3000CD206 /* Training.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728F3DF2271F0275000CD206 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				728F3DDF271DA9AF000CD206 /* ViewController.swift */,
+				728F3DF3271F04FA000CD206 /* HistoryViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				728F3DE0271DA9AF000CD206 /* ViewController.swift in Sources */,
+				728F3DF1271F01D3000CD206 /* Training.swift in Sources */,
 				728F3DDC271DA9AF000CD206 /* AppDelegate.swift in Sources */,
+				728F3DF4271F04FA000CD206 /* HistoryViewController.swift in Sources */,
 				728F3DDE271DA9AF000CD206 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +316,8 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Планка";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Отслеживать начало и конец упражнения";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +346,8 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Планка";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Отслеживать начало и конец упражнения";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
